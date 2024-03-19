@@ -17,6 +17,7 @@ setup(
         "torch>=2.0.0",
         "scikit-learn",
         "matplotlib",
+        "pytorch-lightning~=2.0",
         "torchdiffeq==0.2.3",
         "UMNN",
         "wandb"

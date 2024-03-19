@@ -11,6 +11,12 @@ from binary_gaussian_train_utils import train_loop, load_data_and_adj_mtx
 from strnn.models.strNNDensityEstimator import StrNNDensityEstimator
 import wandb
 
+
+from pathlib import Path
+
+# get the current working directory
+current_working_directory = Path.cwd()
+
 device = torch.device("cuda:0" if torch.cuda.is_available() else "cpu")
 
 parser = argparse.ArgumentParser("Runs StrNN on synthetic dataset.")
